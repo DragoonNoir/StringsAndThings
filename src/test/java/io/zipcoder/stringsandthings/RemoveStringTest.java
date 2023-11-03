@@ -18,9 +18,10 @@ public class RemoveStringTest {
     }
 
 
+
     @Test
     public void withoutStringTest1(){
-        String expected = "He there";
+        String expected = "Hello there";
         String actual = stringsAndThings.removeString("Hello there", "llo");
         Assert.assertEquals(expected, actual);
     }
