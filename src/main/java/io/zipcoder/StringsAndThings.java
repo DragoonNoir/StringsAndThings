@@ -14,6 +14,8 @@ public class StringsAndThings {
      *           countYZ("day fez"); // Should return 2
      *           countYZ("day fyyyz"); // Should return 2
      */
+
+
     public Integer countYZ(String input){
         return null;
     }
@@ -39,9 +41,23 @@ public class StringsAndThings {
      *           containsEqualNumberOfIsAndNot("This is notnot") // Should return true
      *           containsEqualNumberOfIsAndNot("noisxxnotyynotxisi") // Should return true
      */
+
+
+
     public Boolean containsEqualNumberOfIsAndNot(String input){
-        return null;
-    }
+
+        // 2 arrays 1 for is and 1 for not
+        // compair the value
+
+        int is = (input.length() - input.replace("is", "").length())/2;
+        int not = (input.length() - input.replace("not", "").length())/3;
+
+            return (is == not);
+    };
+
+
+
+
 
     /**
      * We'll say that a lowercase 'g' in a string is "happy" if there is another 'g' immediately to its left or right.
