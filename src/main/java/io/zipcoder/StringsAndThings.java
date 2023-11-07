@@ -51,11 +51,15 @@ public class StringsAndThings {
      * removeString("Hello there", "x") // Should return "Hello there"
      */
     public String removeString(String base, String remove) {
+        // return base.???????;
+        String newStr = string.replace("llo", " ");
 
+        return newStr;
 
-
-        return null;
     }
+//return null;  String expected = "Hello there";
+        //        String actual = stringsAndThings.removeString("Hello there", "llo");
+
 
 
     /**
